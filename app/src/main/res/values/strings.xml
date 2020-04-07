@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">TravelGuide</string>
+    <string name="app_name">TravelGuide for travelers v 1.0</string>
+    <string name="btnReg">Register</string>
+    <string name="btnLogin">Log in</string>
+    <string name="btnFaceBookAuth">Facebook</string>
+    <string name="txtWelcome">Welcome!</string>
 </resources>
