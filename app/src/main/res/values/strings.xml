@@ -9,4 +9,5 @@
     <string name="tvName">Name</string>
     <string name="btnSave">Save</string>
     <string name="btnCancel">Cancel</string>
+    <string name="btnGo">GO</string>
 </resources>

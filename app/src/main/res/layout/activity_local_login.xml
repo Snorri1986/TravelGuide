@@ -6,4 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".LocalLoginActivity"
     android:background="@drawable/login_lake_800x600">
+
+    <EditText
+        android:id="@+id/tfLoginLocal"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="111dp"
+        android:background="@drawable/rectangle"
+        android:inputType="text"
+        android:hint="Login"
+        android:textColorHint="@color/trueRed" />
+
+    <EditText
+        android:id="@+id/tfPassLocal"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="219dp"
+        android:background="@drawable/rectangle"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="@color/trueRed" />
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="81dp"
+        android:text="@string/btnGo" />
+
+    <Button
+        android:id="@+id/btnCancelLocal"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginBottom="82dp"
+        android:text="@string/btnCancel" />
+
 </RelativeLayout>
