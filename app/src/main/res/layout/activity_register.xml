@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/road_800x600">
+
+    <Button
+        android:id="@+id/btnSave2"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="81dp"
+        android:text="@string/btnSave" />
+
+    <EditText
+        android:id="@+id/tfPass"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="219dp"
+        android:background="@drawable/rectangle"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="@color/trueRed" />
+
+    <EditText
+        android:id="@+id/tfName"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="337dp"
+        android:background="@drawable/rectangle"
+        android:hint="Name"
+        android:inputType="text"
+        android:textColorHint="@color/trueRed" />
+
+    <EditText
+        android:id="@+id/tfLogin"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="111dp"
+        android:background="@drawable/rectangle"
+        android:inputType="text"
+        android:hint="Login"
+        android:textColorHint="@color/trueRed" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginBottom="82dp"
+        android:text="@string/btnCancel" />
+</RelativeLayout>

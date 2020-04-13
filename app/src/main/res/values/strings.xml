@@ -4,4 +4,9 @@
     <string name="btnLogin">Log in</string>
     <string name="btnFaceBookAuth">Facebook</string>
     <string name="txtWelcome">Welcome!</string>
+    <string name="tvLogin">Login</string>
+    <string name="tvPassword">Password</string>
+    <string name="tvName">Name</string>
+    <string name="btnSave">Save</string>
+    <string name="btnCancel">Cancel</string>
 </resources>
