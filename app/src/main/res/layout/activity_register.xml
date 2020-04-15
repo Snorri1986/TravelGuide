@@ -7,7 +7,7 @@
     android:background="@drawable/road_800x600">
 
     <Button
-        android:id="@+id/btnSave2"
+        android:id="@+id/btnSaveRegister"
         android:layout_width="157dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
