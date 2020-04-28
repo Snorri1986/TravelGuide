@@ -26,7 +26,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Facebook button ---> To facebook API
-        // TODO: call Facebook API
+        val btnCallFacebook = findViewById<Button>(R.id.btnFacebookAuth)
+        btnCallFacebook.setOnClickListener {
+            val intentCallFacebookAuth = Intent(this, FacebookAuthActivity::class.java)
+            startActivity(intentCallFacebookAuth)
+        }
 
     }
 }

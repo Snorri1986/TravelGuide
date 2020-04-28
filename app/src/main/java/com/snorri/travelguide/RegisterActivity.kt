@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_register.*
 
+
 class RegisterActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +21,7 @@ class RegisterActivity : AppCompatActivity() {
             startActivity(intentbtnCancel)
         }
 
-        // Save to DB. Test code 14.04.20202
+        // Save to DB.
         val btnSave = findViewById<Button>(R.id.btnSaveRegister)
         btnSave.setOnClickListener {
             val dbHandler = UserDBHelper(this, null)
@@ -28,6 +29,5 @@ class RegisterActivity : AppCompatActivity() {
             dbHandler.addName(user)
             Toast.makeText(this, tfName.text.toString() + " Added to user database", Toast.LENGTH_LONG).show()
         }
-        // ... //
     }
 }

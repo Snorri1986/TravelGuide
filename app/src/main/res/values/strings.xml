@@ -10,4 +10,6 @@
     <string name="btnSave">Save</string>
     <string name="btnCancel">Cancel</string>
     <string name="btnGo">GO</string>
+    <string name="facebook_app_id">374211683535457</string>
+    <string name="fb_login_protocol_scheme">fb374211683535457</string>
 </resources>
