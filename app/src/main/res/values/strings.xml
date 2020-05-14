@@ -12,4 +12,6 @@
     <string name="btnGo">GO</string>
     <string name="facebook_app_id">374211683535457</string>
     <string name="fb_login_protocol_scheme">fb374211683535457</string>
+    <string name="btn_add_local_photo">Add photo</string>
+    <string name="tvGreetings">Welcome,</string>
 </resources>

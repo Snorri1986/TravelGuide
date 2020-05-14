@@ -13,12 +13,12 @@ class UserDBHelper(context: Context,
 
 
     override fun onCreate(db: SQLiteDatabase) {
-        val CREATE_UESR_TABLE = ("CREATE TABLE " +
+        val CREATE_USER_TABLE = ("CREATE TABLE " +
                 TABLE_NAME + "("
                 + COLUMN_LOGIN + " TEXT," +
                   COLUMN_PASWORD + " TEXT," +
                   NATIVE_NAME + " TEXT" + ")")
-        db.execSQL(CREATE_UESR_TABLE)
+        db.execSQL(CREATE_USER_TABLE)
     }
 
 
@@ -37,7 +37,6 @@ class UserDBHelper(context: Context,
         db.insert(TABLE_NAME, null,values)
         db.close()
     }
-
 
     // get user name and password
     fun getUser(login: String): User? {
