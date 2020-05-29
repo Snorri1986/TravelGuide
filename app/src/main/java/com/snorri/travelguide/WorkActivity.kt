@@ -1,21 +1,20 @@
 package com.snorri.travelguide
 
-import android.support.v7.app.AppCompatActivity
-import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_work.*
 import android.Manifest
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import android.graphics.Color
+import android.database.Cursor
 import android.net.Uri
-import android.os.Build.*
-import android.widget.Button
+import android.os.Build.VERSION
+import android.os.Build.VERSION_CODES
+import android.os.Bundle
+import android.provider.MediaStore
+import android.support.v7.app.AppCompatActivity
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_work.*
 
 class WorkActivity : AppCompatActivity() {
 
@@ -28,6 +27,17 @@ class WorkActivity : AppCompatActivity() {
         val usrNatName = intent.getStringExtra("UserNativeName")
         tvGreetingForuser.setText(usrNatName)
         // ... //
+
+        // show user profile photo
+        val ivUserPhoto = findViewById<ImageView>(R.id.local_profile_image)
+        val usrGalleryPhoto = intent.getStringExtra("UsrImage")
+        if (usrGalleryPhoto == null) {
+            ivUserPhoto.setImageResource(R.drawable.ic_crop_original_black_24dp)
+        } else {
+            ivUserPhoto.setImageURI(Uri.parse(usrGalleryPhoto))
+        }
+        // ... //
+
 
         //BUTTON CLICK
         btn_add_local_photo.setOnClickListener {
@@ -53,6 +63,17 @@ class WorkActivity : AppCompatActivity() {
         }
     }
 
+    // Get real file path
+    open fun getRealPathFromURI(uri: Uri?): String? {
+        val cursor: Cursor = contentResolver.query(uri, null, null, null, null)
+        cursor.moveToFirst()
+        val idx: Int = cursor.getColumnIndex(MediaStore.Images.ImageColumns.DATA)
+        return cursor.getString(idx)
+    }
+    // ... //
+
+
+
     private fun pickImageFromGallery() {
         //Intent to pick image
         val intent = Intent(Intent.ACTION_PICK)
@@ -68,7 +89,7 @@ class WorkActivity : AppCompatActivity() {
     }
 
     //handle requested permission result
-    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         when(requestCode){
             PERMISSION_CODE -> {
                 if (grantResults.size >0 && grantResults[0] ==
@@ -88,6 +109,16 @@ class WorkActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         if (resultCode == Activity.RESULT_OK && requestCode == IMAGE_PICK_CODE){
             local_profile_image.setImageURI(data?.data)
+            // Add image to DB
+            val usrLogin = intent.getStringExtra("UserLogin")
+            val dbHandler = UserDBHelper(this, null)
+            // Get real file path
+            var imageRealPathTest = getRealPathFromURI(data?.data) // work perfect
+            // ... ///
+            // Save on DB
+            var res : Boolean = dbHandler.addUserImage(imageRealPathTest,usrLogin)
+            // ... //
+            if(res) Toast.makeText(this, "User image add to DB", Toast.LENGTH_LONG).show()
         }
     }
 }

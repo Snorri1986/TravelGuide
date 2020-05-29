@@ -1,12 +1,9 @@
 package com.snorri.travelguide
 
 import android.content.Intent
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_local_login.*
 
@@ -41,6 +38,12 @@ class LocalLoginActivity : AppCompatActivity() {
             if(authUser?.Login == etLogin && authUser?.Password == etPassword) {
                 val intentGoNext = Intent(this, WorkActivity::class.java)
                 intentGoNext.putExtra("UserNativeName",authUser?.userNativeName)
+                intentGoNext.putExtra("UserLogin",authUser?.Login)
+                // Get user image from DB
+                val profileImage = dbHandler.getUserImage(etLogin)
+                // Pass it to WorkAcrivity
+                intentGoNext.putExtra("UsrImage",profileImage)
+                // ... //
                 startActivity(intentGoNext)
             } else {
                 Toast.makeText(this, "Incorrect username or password", Toast.LENGTH_LONG).show()

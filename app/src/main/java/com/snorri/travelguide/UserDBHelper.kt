@@ -5,7 +5,6 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-
 class UserDBHelper(context: Context,
                    factory: SQLiteDatabase.CursorFactory?) :
     SQLiteOpenHelper(context, DATABASE_NAME,
@@ -19,7 +18,16 @@ class UserDBHelper(context: Context,
                   COLUMN_PASWORD + " TEXT," +
                   NATIVE_NAME + " TEXT" + ")")
         db.execSQL(CREATE_USER_TABLE)
+
+        // table for user image
+        val CREATE_IMAGE_TABLE = ("CREATE TABLE " +
+                USR_PROFILE_TAB + "("
+                + COLUMN_LOGIN + " TEXT," +
+                USR_PROFILE_IMAGE + " TEXT" + ")")
+        db.execSQL(CREATE_IMAGE_TABLE)
+        // ... //
     }
+
 
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
@@ -37,6 +45,35 @@ class UserDBHelper(context: Context,
         db.insert(TABLE_NAME, null,values)
         db.close()
     }
+
+    // add user profile image
+    fun addUserImage(imgPath:String?,userLogin:String) : Boolean {
+        val db = this.writableDatabase
+        val values = ContentValues()
+        values.put(COLUMN_LOGIN,userLogin)
+        values.put(USR_PROFILE_IMAGE,imgPath)
+        db.insert(USR_PROFILE_TAB,null,values)
+        if(!imgPath!!.isEmpty() && !userLogin.isEmpty()) {
+            return true
+        } else {
+            return false
+        }
+    }
+    // ... //
+
+    // fetch user image
+   fun getUserImage(login: String): String? {
+        val db = this.writableDatabase
+        val selectQuery = "SELECT  * FROM $USR_PROFILE_TAB WHERE $COLUMN_LOGIN = ?"
+        db.rawQuery(selectQuery, arrayOf(login)).use { // .use requires API 16
+            if (it.moveToFirst()) {
+                val usrImgUri : String = it.getString(it.getColumnIndex(USR_PROFILE_IMAGE))
+                return usrImgUri
+            }
+        }
+        return null
+    }
+    // ... //
 
     // get user name and password
     fun getUser(login: String): User? {
@@ -61,5 +98,7 @@ class UserDBHelper(context: Context,
         val COLUMN_LOGIN = "Login"
         val COLUMN_PASWORD = "Password"
         val NATIVE_NAME = "Name"
+        val USR_PROFILE_IMAGE = "UsrImage"
+        val USR_PROFILE_TAB = "UserImagesTable"
     }
 }
