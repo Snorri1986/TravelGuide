@@ -5,20 +5,35 @@ import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.database.Cursor
+import android.location.Address
+import android.location.Geocoder
+import android.location.Location
 import android.net.Uri
 import android.os.Build.VERSION
 import android.os.Build.VERSION_CODES
 import android.os.Bundle
 import android.provider.MediaStore
 import android.support.v7.app.AppCompatActivity
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_work.*
+import java.util.*
 
 class WorkActivity : AppCompatActivity() {
 
+    // global GPS variables
+    var latitude_gps_coordinate:Double? = null
+    var longtitude_gps_coordinate:Double? = null
+    // ... //
+
+    // Location advice.
+    val locWeatherAdvice:String = "Click \"Freeze location\" button before get weather information"
+    // ... //
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_work)
 
@@ -61,7 +76,62 @@ class WorkActivity : AppCompatActivity() {
                 pickImageFromGallery();
             }
         }
+
+        // Get weather
+        val btnCallWeather = findViewById<Button>(R.id.btnWeather)
+        btnCallWeather.setOnClickListener {
+            val intentCallWeather = Intent(this, WeatherActivity::class.java)
+            startActivity(intentCallWeather)
+        }
+        // ... //
+
+        // Store GPS coordinates.
+        val btnFLoc = findViewById<Button>(R.id.btnFreezeLoc)
+        btnFLoc.setOnClickListener {
+            val dbHandler = UserDBHelper(this, null)
+            var res : Boolean = dbHandler.storeGps(latitude_gps_coordinate!!,longtitude_gps_coordinate!!)
+            if(res) Toast.makeText(this, "User GPS added to DB", Toast.LENGTH_LONG).show()
+        }
+        // ... //
+
+
+        LocationHelper().startListeningUserLocation(this , object : LocationHelper.MyLocationListener {
+            override fun onLocationChanged(location: Location) {
+
+                latitude_gps_coordinate = location.latitude
+                longtitude_gps_coordinate = location.longitude
+
+
+                var tvUserGPS = findViewById<TextView>(R.id.tvLocation)
+                tvUserGPS.setText(getGpsAddress(location.latitude,location.longitude))
+
+                // show current latitude
+                var tvLat = findViewById<TextView>(R.id.tvLat)
+                tvLat.setText(location.latitude.toString())
+
+                // show current longtitude
+                var tvLongtit = findViewById<TextView>(R.id.tvLong)
+                tvLongtit.setText(location.longitude.toString())
+                // ... //
+            }
+        })
+        // ... //
+
+        // Wheater on location advice.
+        Toast.makeText(this,locWeatherAdvice, Toast.LENGTH_LONG).show()
+        // ... //
+
     }
+
+    // convert GPS coordinates to the country name
+    fun getGpsAddress(lat:Double,longtit:Double) : String  {
+        var gcd = Geocoder(baseContext,Locale.getDefault())
+        var addrList:MutableList<Address> = gcd.getFromLocation(lat,longtit,1)
+        val countryName:String = addrList[0].countryName
+        return countryName
+    }
+    // ... //
+
 
     // Get real file path
     open fun getRealPathFromURI(uri: Uri?): String? {
@@ -71,8 +141,6 @@ class WorkActivity : AppCompatActivity() {
         return cursor.getString(idx)
     }
     // ... //
-
-
 
     private fun pickImageFromGallery() {
         //Intent to pick image

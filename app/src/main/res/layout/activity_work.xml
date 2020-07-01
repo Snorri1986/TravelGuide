@@ -8,6 +8,105 @@
     android:background="@drawable/lighthouse_800x600"
     android:orientation="vertical">
 
+    <Button
+        android:id="@+id/btnFreezeLoc"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="275dp"
+        android:text="@string/btnFreezeLoc" />
+
+    <TextView
+        android:id="@+id/tvLongPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="183dp"
+        android:layout_marginTop="159dp"
+        android:text="@string/tvLongPhrase"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvLatPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="158dp"
+        android:text="@string/tvLatPhrase"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="267dp"
+        android:layout_marginTop="167dp"
+        android:text="@string/tvLong" />
+
+    <TextView
+        android:id="@+id/tvLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="166dp"
+        android:text="LATITUDE" />
+
+    <Button
+        android:id="@+id/btnMapLocation"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="279dp"
+        android:text="@string/btnMapLocation" />
+
+    <Button
+        android:id="@+id/btnWeather"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="213dp"
+        android:text="@string/btnWeather" />
+
+    <Button
+        android:id="@+id/btnNewTrip"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="215dp"
+        android:text="@string/btnNewTrip" />
+
+    <TextView
+        android:id="@+id/tvLocationPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="112dp"
+        android:text="@string/tvLocationPhrase"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/tvUserName"
@@ -52,5 +151,16 @@
         android:layout_marginTop="74dp"
         android:text="@string/tvGreetings"
         android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="269dp"
+        android:layout_marginTop="124dp"
+        android:text="MY LOCATION" />
 
 </RelativeLayout>

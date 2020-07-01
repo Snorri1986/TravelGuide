@@ -45,6 +45,9 @@ class LocalLoginActivity : AppCompatActivity() {
                 intentGoNext.putExtra("UsrImage",profileImage)
                 // ... //
                 startActivity(intentGoNext)
+                // Activate Geolocation message
+                Toast.makeText(this, "Click back once to activation Geolocation", Toast.LENGTH_LONG).show()
+                // ... //
             } else {
                 Toast.makeText(this, "Incorrect username or password", Toast.LENGTH_LONG).show()
             }

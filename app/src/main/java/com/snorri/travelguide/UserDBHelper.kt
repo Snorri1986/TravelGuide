@@ -26,15 +26,24 @@ class UserDBHelper(context: Context,
                 USR_PROFILE_IMAGE + " TEXT" + ")")
         db.execSQL(CREATE_IMAGE_TABLE)
         // ... //
+
+
+        // table for user's GPS location coordinate.
+        val CREATE_GPSLOC_TABLE = ("CREATE TABLE " +
+                USR_GPS_TAB + "("
+                + COLUMN_LAT + " REAL," +
+                COLUMN_GPS_NAT_NAME + " TEXT,"  +
+                COLUMN_LONG + " REAL" + ")")
+        db.execSQL(CREATE_GPSLOC_TABLE)
+        // ... //
+
+
     }
-
-
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME)
         onCreate(db)
     }
-
 
     fun addName(usr: User) {
         val values = ContentValues()
@@ -91,6 +100,40 @@ class UserDBHelper(context: Context,
         return null
     }
 
+    // Add user GPS coordinate.
+    fun storeGps(gpsLat:Double,gpsLong:Double,nName:String = "User"):Boolean {
+        var res:Boolean = false
+        val db = this.writableDatabase
+        val values = ContentValues()
+            values.put(COLUMN_LAT, gpsLat)
+            values.put(COLUMN_GPS_NAT_NAME, nName)
+            values.put(COLUMN_LONG, gpsLong)
+            db.insert(USR_GPS_TAB, null, values)
+        if(!gpsLat.toString().isEmpty() && !gpsLong.toString().isEmpty()) {
+            res = true
+            return res
+        } else {
+            return res
+        }
+    }
+    // ... //
+
+    // Get user stored GPS
+    fun getUserStoredGps(uName: String): UserLocator? {
+        val db = this.writableDatabase
+        val selectQuery = "SELECT  * FROM $USR_GPS_TAB WHERE $COLUMN_GPS_NAT_NAME = ?"
+        db.rawQuery(selectQuery, arrayOf(uName)).use { // .use requires API 16
+            if (it.moveToFirst()) {
+                val curUser = UserLocator()
+                curUser.latitude= it.getDouble(it.getColumnIndex(COLUMN_LAT))
+                curUser.longtitude = it.getDouble(it.getColumnIndex(COLUMN_LONG))
+                return curUser
+            }
+        }
+        return null
+    }
+    // ... //
+
     companion object {
         private val DATABASE_VERSION = 1
         private val DATABASE_NAME = "users.db"
@@ -100,5 +143,9 @@ class UserDBHelper(context: Context,
         val NATIVE_NAME = "Name"
         val USR_PROFILE_IMAGE = "UsrImage"
         val USR_PROFILE_TAB = "UserImagesTable"
+        val USR_GPS_TAB = "UserGps"
+        val COLUMN_LAT = "GpsLat"
+        val COLUMN_LONG = "GpsLong"
+        val COLUMN_GPS_NAT_NAME = "GpsDefaultUser"
     }
 }

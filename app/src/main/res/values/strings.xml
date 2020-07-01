@@ -14,4 +14,13 @@
     <string name="fb_login_protocol_scheme">fb374211683535457</string>
     <string name="btn_add_local_photo">Add photo</string>
     <string name="tvGreetings">Welcome,</string>
+    <string name="tvLocationPhrase">My current location is:</string>
+    <string name="btnNewTrip">New Trip</string>
+    <string name="btnWeather">Get Weather</string>
+    <string name="btnMapLocation">Map</string>
+    <string name="tvLatPhrase">Lat:</string>
+    <string name="tvLongPhrase">Long:</string>
+    <string name="tvLong">LONGTITUDE</string>
+    <string name="btnFreezeLoc">Freeze location</string>
+
 </resources>
