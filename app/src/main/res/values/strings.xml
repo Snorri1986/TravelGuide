@@ -22,5 +22,12 @@
     <string name="tvLongPhrase">Long:</string>
     <string name="tvLong">LONGTITUDE</string>
     <string name="btnFreezeLoc">Freeze location</string>
+    <string name="btnSendMsg">Send message</string>
+    <string name="btnTrReports">Travel Reports</string>
+    <string name="btnSocialNetwrks">Social Networks</string>
+    <string name="btnPhoto">Make photo</string>
+    <string name="btnCurExchange">Currency Exchange</string>
+    <string name="btnLockHistory">Location History</string>
+    <string name="btnFAQ">FAQ</string>
 
 </resources>

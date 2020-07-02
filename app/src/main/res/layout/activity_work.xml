@@ -9,14 +9,101 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/btnFreezeLoc"
+        android:id="@+id/btnFAQ"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="535dp"
+        android:layout_marginEnd="117dp"
+        android:text="@string/btnFAQ" />
+
+    <Button
+        android:id="@+id/btnLockHistory"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="479dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btnLockHistory" />
+
+    <Button
+        android:id="@+id/btnCurExchange"
         android:layout_width="179dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="212dp"
-        android:layout_marginTop="275dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="479dp"
+        android:text="@string/btnCurExchange" />
+
+    <Button
+        android:id="@+id/btnPhoto"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="217dp"
+        android:layout_marginTop="411dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/btnPhoto" />
+
+    <Button
+        android:id="@+id/btnSocialNetwrks"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="412dp"
+        android:text="@string/btnSocialNetwrks" />
+
+    <Button
+        android:id="@+id/btnTrReports"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="219dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="13dp"
+        android:text="@string/btnTrReports" />
+
+    <Button
+        android:id="@+id/btnSendMsg"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="343dp"
+        android:text="@string/btnSendMsg" />
+
+    <Button
+        android:id="@+id/btnFreezeLoc"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="219dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="13dp"
         android:text="@string/btnFreezeLoc" />
 
     <TextView
@@ -72,8 +159,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="279dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="276dp"
         android:text="@string/btnMapLocation" />
 
     <Button
@@ -82,8 +169,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="210dp"
-        android:layout_marginTop="213dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="223dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="9dp"
         android:text="@string/btnWeather" />
 
     <Button
@@ -92,8 +182,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="215dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="212dp"
         android:text="@string/btnNewTrip" />
 
     <TextView
