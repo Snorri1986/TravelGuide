@@ -33,17 +33,43 @@ class UserDBHelper(context: Context,
                 USR_GPS_TAB + "("
                 + COLUMN_LAT + " REAL," +
                 COLUMN_GPS_NAT_NAME + " TEXT,"  +
-                COLUMN_LONG + " REAL" + ")")
+                COLUMN_LONG + " REAL" +
+                ")")
         db.execSQL(CREATE_GPSLOC_TABLE)
         // ... //
 
 
+        // table for store user's trips v 0.6.6.1
+        val CREATE_TRIPS_TABLE = ("CREATE TABLE " +
+                USR_TRIPS_TAB + "("
+                + COLUMN_TRIP_NAME + " TEXT," +
+                COLUMN_START_DATE + " TEXT,"  +
+                COLUMN_END_DATE + " TEXT," +
+                COLUMN_FROM_CITY + " TEXT," +
+                COLUMN_TO_CITY + " TEXT," +
+                COLUMN_TRANSPORT + " TEXT" +
+                COLUMN_HOTEL + " TEXT," +
+                COLUMN_SPENDINGS + " TEXT," +
+                COLUMN_USER_NAME + " TEXT" + ")")
+        db.execSQL(CREATE_TRIPS_TABLE)
+        // ... //
     }
 
+
+
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME)
+        // upgrade for every table v 0.6.6.1
+        var dbString:String = db.toString()
+        when(dbString) {
+            TABLE_NAME -> db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME)
+            USR_PROFILE_TAB -> db.execSQL("DROP TABLE IF EXISTS " + USR_PROFILE_TAB)
+            USR_GPS_TAB -> db.execSQL("DROP TABLE IF EXISTS " + USR_GPS_TAB)
+            USR_TRIPS_TAB -> db.execSQL("DROP TABLE IF EXISTS " + USR_TRIPS_TAB)
+        }
         onCreate(db)
     }
+
+
 
     fun addName(usr: User) {
         val values = ContentValues()
@@ -54,6 +80,25 @@ class UserDBHelper(context: Context,
         db.insert(TABLE_NAME, null,values)
         db.close()
     }
+
+
+    // add user's trip v 0.6.6.1
+    fun addUserTrip(voyage: Trip,nName:String = "User") {
+        val values = ContentValues()
+        values.put(COLUMN_TRIP_NAME, voyage.trName)
+        values.put(COLUMN_START_DATE, voyage.trStartDate)
+        values.put(COLUMN_END_DATE,voyage.trEndDate)
+        values.put(COLUMN_FROM_CITY, voyage.trFromCity)
+        values.put(COLUMN_TO_CITY, voyage.trToCity)
+        values.put(COLUMN_TRANSPORT, voyage.trVehicle)
+        values.put(COLUMN_HOTEL, voyage.trHotel)
+        values.put(COLUMN_SPENDINGS, voyage.trPlannedSpendings)
+        values.put(COLUMN_USER_NAME, nName)
+        val db = this.writableDatabase
+        db.insert(USR_TRIPS_TAB, null,values)
+        db.close()
+    }
+    // ... //
 
     // add user profile image
     fun addUserImage(imgPath:String?,userLogin:String) : Boolean {
@@ -134,6 +179,7 @@ class UserDBHelper(context: Context,
     }
     // ... //
 
+    // v 0.6.6.1
     companion object {
         private val DATABASE_VERSION = 1
         private val DATABASE_NAME = "users.db"
@@ -147,5 +193,16 @@ class UserDBHelper(context: Context,
         val COLUMN_LAT = "GpsLat"
         val COLUMN_LONG = "GpsLong"
         val COLUMN_GPS_NAT_NAME = "GpsDefaultUser"
+        val USR_TRIPS_TAB = "UserTrips"
+        val COLUMN_TRIP_NAME = "TripName"
+        val COLUMN_START_DATE = "sDate"
+        val COLUMN_END_DATE = "eDate"
+        val COLUMN_FROM_CITY = "FromCity"
+        val COLUMN_TO_CITY = "ToCity"
+        val COLUMN_TRANSPORT = "Vehicle"
+        val COLUMN_HOTEL = "Hotel"
+        val COLUMN_SPENDINGS = "Spendings"
+        val COLUMN_USER_NAME = "Uname"
+        // ... //
     }
 }

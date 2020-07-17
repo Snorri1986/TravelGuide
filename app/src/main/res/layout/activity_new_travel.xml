@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewTravelActivity"
+    android:background="@drawable/train_800x600">
+
+    <Button
+        android:id="@+id/btnCancelTrip"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="277dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/btnCancelTrip" />
+
+    <Button
+        android:id="@+id/btnTransportPass"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginBottom="74dp"
+        android:text="@string/btnTransportPass" />
+
+    <Button
+        android:id="@+id/btnAcomHotels"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="75dp"
+        android:text="@string/btnAcomHotels" />
+
+    <Button
+        android:id="@+id/btnTaxxis"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="278dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="73dp"
+        android:text="@string/btnTaxxis" />
+
+    <Button
+        android:id="@+id/btnSaveTrip"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginBottom="22dp"
+        android:text="@string/btnSaveTrip" />
+
+    <EditText
+        android:id="@+id/tfAcomodation"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/rectangle"
+        android:hint="@string/tfAcomodation"
+        android:inputType="text"
+        android:textColorHint="@color/trueRed" />
+
+    <EditText
+        android:id="@+id/tfToLocation"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="247dp"
+        android:background="@drawable/rectangle"
+        android:hint="@string/tfToLocation"
+        android:inputType="text"
+        android:textColorHint="@color/trueRed" />
+
+    <EditText
+        android:id="@+id/tfFromLocation"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="185dp"
+        android:background="@drawable/rectangle"
+        android:hint="@string/tfFromLocation"
+        android:inputType="text"
+        android:textColorHint="@color/trueRed" />
+
+    <EditText
+        android:id="@+id/tfMoney"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="433dp"
+        android:background="@drawable/rectangle"
+        android:hint="@string/tfMoney"
+        android:inputType="text"
+        android:textColorHint="@color/trueRed" />
+
+    <EditText
+        android:id="@+id/tfTransport"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="310dp"
+        android:background="@drawable/rectangle"
+        android:inputType="text"
+        android:textColorHint="@color/trueRed" />
+
+    <Spinner
+        android:id="@+id/vehicleSpinner"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@id/tfTransport"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp" />
+
+    <EditText
+        android:id="@+id/tfEndDate"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="131dp"
+        android:background="@drawable/rectangle"
+        android:hint="@string/tfEndDate"
+        android:inputType="date"
+        android:clickable="true"
+        android:focusable="false"
+        android:textColorHint="@color/trueRed" />
+
+    <EditText
+        android:id="@+id/tfNewTrip"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/rectangle"
+        android:hint="@string/tfNewTrip"
+        android:inputType="text"
+        android:textColorHint="@color/trueRed" />
+
+    <EditText
+        android:id="@+id/tfStartDate"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/rectangle"
+        android:hint="@string/tfStartDate"
+        android:inputType="date"
+        android:clickable="true"
+        android:focusable="false"
+        android:textColorHint="@color/trueRed" />
+
+    <Button
+        android:id="@+id/btnErase"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="22dp"
+        android:text="@string/btnErase" />
+
+</RelativeLayout>

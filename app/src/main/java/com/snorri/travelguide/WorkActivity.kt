@@ -37,6 +37,12 @@ class WorkActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_work)
 
+        // test code 13.07.2020 v.0.6.5.1
+        // need test outside home
+        latitude_gps_coordinate = null
+        longtitude_gps_coordinate = null
+        // ... //
+
         // Show user native name
         val tvGreetingForuser = findViewById<TextView>(R.id.tvUserName)
         val usrNatName = intent.getStringExtra("UserNativeName")
@@ -119,6 +125,15 @@ class WorkActivity : AppCompatActivity() {
 
         // Wheater on location advice.
         Toast.makeText(this,locWeatherAdvice, Toast.LENGTH_LONG).show()
+        // ... //
+
+        // go to new trip activity
+        // test code 03.07.2020
+        val btnNewTr = findViewById<Button>(R.id.btnNewTrip)
+        btnNewTr.setOnClickListener {
+            val intentCallNewTrip = Intent(this, NewTravelActivity::class.java)
+            startActivity(intentCallNewTrip)
+        }
         // ... //
 
     }

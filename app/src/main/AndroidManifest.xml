@@ -15,10 +15,11 @@
         android:roundIcon="@mipmap/cowboy"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WeatherActivity"
-            android:theme="@style/CustomTheme"
-            android:screenOrientation="fullSensor">
-        </activity>
+        <activity android:name=".NewTravelActivity"></activity>
+        <activity
+            android:name=".WeatherActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/CustomTheme"></activity>
         <activity android:name=".FacebookAuthActivity" />
         <activity android:name=".WorkActivity" />
         <activity android:name=".LocalLoginActivity" />
