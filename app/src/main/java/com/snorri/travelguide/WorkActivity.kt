@@ -37,12 +37,6 @@ class WorkActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_work)
 
-        // test code 13.07.2020 v.0.6.5.1
-        // need test outside home
-        latitude_gps_coordinate = null
-        longtitude_gps_coordinate = null
-        // ... //
-
         // Show user native name
         val tvGreetingForuser = findViewById<TextView>(R.id.tvUserName)
         val usrNatName = intent.getStringExtra("UserNativeName")
@@ -96,7 +90,7 @@ class WorkActivity : AppCompatActivity() {
         btnFLoc.setOnClickListener {
             val dbHandler = UserDBHelper(this, null)
             var res : Boolean = dbHandler.storeGps(latitude_gps_coordinate!!,longtitude_gps_coordinate!!)
-            if(res) Toast.makeText(this, "User GPS added to DB", Toast.LENGTH_LONG).show()
+            if(res) Toast.makeText(this, "Location freezed", Toast.LENGTH_LONG).show()
         }
         // ... //
 

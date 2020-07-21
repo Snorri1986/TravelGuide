@@ -128,6 +128,30 @@ class NewTravelActivity : AppCompatActivity() {
         }
         // ... //
 
+        // Taxi button. ready to commit v.0.6.6.2
+        val btnTaxi = findViewById<Button>(R.id.btnTaxxis)
+        btnTaxi.setOnClickListener {
+            val intentbtnTaxi = Intent(this, TaxiActivity::class.java)
+            startActivity(intentbtnTaxi)
+        }
+        // ... //
+
+        // Hotels button. ready to commit v.0.6.6.2
+        val btnHotels = findViewById<Button>(R.id.btnAcomHotels)
+        btnHotels.setOnClickListener {
+            val intentbtnHotels = Intent(this, HotelsActivity::class.java)
+            startActivity(intentbtnHotels)
+        }
+        // ... //
+
+        // Tickets button. ready to commit v.0.6.6.2
+        val btnTickets = findViewById<Button>(R.id.btnTransportPass)
+        btnTickets.setOnClickListener {
+            val intentbtnTickets = Intent(this, TicketsActivity::class.java)
+            startActivity(intentbtnTickets)
+        }
+        // ... //
+
     }
 
     // ... //

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaxiActivity">
+
+    <ImageView
+        android:id="@+id/ivUber"
+        android:layout_width="124dp"
+        android:layout_height="118dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="272dp"
+        android:src="@drawable/uber" />
+
+    <ImageView
+        android:id="@+id/ivUklon"
+        android:layout_width="124dp"
+        android:layout_height="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-3dp"
+        android:src="@drawable/uklon" />
+
+    <TextView
+        android:id="@+id/tvUber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="138dp"
+        android:text="@string/tvUber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvUklon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="136dp"
+        android:text="@string/tvUklon"
+        android:textStyle="bold" />
+
+</RelativeLayout>

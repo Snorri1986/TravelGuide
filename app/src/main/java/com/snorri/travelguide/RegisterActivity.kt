@@ -28,6 +28,7 @@ class RegisterActivity : AppCompatActivity() {
             val user = User(tfLogin.text.toString(),tfPass.text.toString(),tfName.text.toString())
             dbHandler.addName(user)
             Toast.makeText(this, tfName.text.toString() + " Added to user database", Toast.LENGTH_LONG).show()
+
             // Go to MainActivity
             val intentbtnReg = Intent(this, MainActivity::class.java)
             startActivity(intentbtnReg)

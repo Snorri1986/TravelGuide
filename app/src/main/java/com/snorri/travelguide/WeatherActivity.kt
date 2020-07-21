@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.ProgressBar
 import android.widget.RelativeLayout
 import android.widget.TextView
+import android.widget.Toast
 import org.json.JSONObject
 import java.net.URL
 import java.text.SimpleDateFormat
@@ -29,6 +30,10 @@ class WeatherActivity : AppCompatActivity() {
         // ... //
 
         weatherTask().execute()
+
+        // clean table for next query v 0.6.6.2
+        delGPS()
+        // ... //
     }
 
     // get lat and long from db
@@ -41,6 +46,15 @@ class WeatherActivity : AppCompatActivity() {
         }
     }
     // ... //
+
+
+    // for update GPS location. Clean table  v 0.6.6.2
+    fun delGPS() {
+        val dbHandler = UserDBHelper(this, null)
+        dbHandler.cleanUserGpsTable()
+        Toast.makeText(this, "GPS Location was deleted", Toast.LENGTH_LONG).show()
+    }
+    // ... ///
 
     inner class weatherTask() : AsyncTask<String, Void, String>() {
         override fun onPreExecute() {

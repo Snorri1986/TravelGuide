@@ -163,6 +163,7 @@ class UserDBHelper(context: Context,
     }
     // ... //
 
+
     // Get user stored GPS
     fun getUserStoredGps(uName: String): UserLocator? {
         val db = this.writableDatabase
@@ -176,6 +177,15 @@ class UserDBHelper(context: Context,
             }
         }
         return null
+    }
+    // ... //
+
+
+    // clean USR_GPS_TAB table v 0.6.6.2
+    fun cleanUserGpsTable() {
+        val db = this.writableDatabase
+        db.execSQL("delete from " + USR_GPS_TAB)
+        db.close()
     }
     // ... //
 

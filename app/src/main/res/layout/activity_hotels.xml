@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HotelsActivity">
+
+    <ImageView
+        android:id="@+id/ivBookingCom"
+        android:layout_width="124dp"
+        android:layout_height="118dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="272dp"
+        android:src="@drawable/booking" />
+
+    <ImageView
+        android:id="@+id/ivAirBnbRu"
+        android:layout_width="124dp"
+        android:layout_height="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-3dp"
+        android:src="@drawable/airbnb" />
+
+    <ImageView
+        android:id="@+id/ivTrivagoCom"
+        android:layout_width="124dp"
+        android:layout_height="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/trivago" />
+
+    <ImageView
+        android:id="@+id/ivAgodaCom"
+        android:layout_width="124dp"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="272dp"
+        android:src="@drawable/agoda" />
+
+    <TextView
+        android:id="@+id/tvBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="136dp"
+        android:text="@string/tvBooking"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAirBnB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="136dp"
+        android:text="@string/tvAirBnB"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTrivago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="137dp"
+        android:layout_marginEnd="52dp"
+        android:text="@string/tvTrivago"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAgoda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="495dp"
+        android:text="@string/tvAgoda"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
