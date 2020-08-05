@@ -121,12 +121,20 @@ class WorkActivity : AppCompatActivity() {
         Toast.makeText(this,locWeatherAdvice, Toast.LENGTH_LONG).show()
         // ... //
 
-        // go to new trip activity
-        // test code 03.07.2020
+        // go to new trip activity v 0.6.6.2
         val btnNewTr = findViewById<Button>(R.id.btnNewTrip)
         btnNewTr.setOnClickListener {
             val intentCallNewTrip = Intent(this, NewTravelActivity::class.java)
             startActivity(intentCallNewTrip)
+        }
+        // ... //
+
+        // show my location on Google Map Application v 0.6.7
+        val btnGoogleMap = findViewById<Button>(R.id.btnMapLocation)
+        btnGoogleMap.setOnClickListener {
+            val pm: PackageManager = this.getPackageManager()
+            val googleMapsIntent:Intent = pm.getLaunchIntentForPackage("com.google.android.apps.maps")
+            this.startActivity(googleMapsIntent)
         }
         // ... //
 
