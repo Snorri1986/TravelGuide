@@ -138,6 +138,23 @@ class WorkActivity : AppCompatActivity() {
         }
         // ... //
 
+        // send e-mail v 0.6.8
+        val btnGmail = findViewById<Button>(R.id.btnSendMsg)
+        btnGmail.setOnClickListener {
+            val pm: PackageManager = this.getPackageManager()
+            val runGmail:Intent = pm.getLaunchIntentForPackage("com.google.android.gm")
+            this.startActivity(runGmail)
+        }
+        // ... //
+
+        // social networks v 0.6.8
+        val btnSN = findViewById<Button>(R.id.btnSocialNetwrks)
+        btnSN.setOnClickListener {
+            val intentCallSN = Intent(this, SocialNetworksActivity::class.java)
+            startActivity(intentCallSN)
+        }
+        // ... //
+
     }
 
     // convert GPS coordinates to the country name

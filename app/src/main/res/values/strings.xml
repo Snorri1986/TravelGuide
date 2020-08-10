@@ -59,4 +59,8 @@
     <string name="tvGo">goibibi.com</string>
     <string name="tvMyTrip">makemytrip.com</string>
     <string name="tvSkyScanner">skyscanner.com</string>
+    <string name="tvFB">facebook.com</string>
+    <string name="tvTwitter">twitter.com</string>
+    <string name="tvInstagram">instagram.com</string>
+
 </resources>
