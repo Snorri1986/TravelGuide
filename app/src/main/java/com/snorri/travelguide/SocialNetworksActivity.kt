@@ -22,13 +22,23 @@ class SocialNetworksActivity : AppCompatActivity() {
         ivFacebook.setOnClickListener {
             // check app
             val pm: PackageManager = this.getPackageManager()
+            // facebook lite version v 0.6.8.1
             val isInstalled: Boolean = ha.isPackageInstalled("com.facebook.katana",pm)
+            val isInstalled_lite: Boolean = ha.isPackageInstalled("com.facebook.lite",pm)
             if (isInstalled) {
                 // Run app
                 val launcher_intent: Intent = pm.getLaunchIntentForPackage("com.facebook.katana")
                 launcher_intent.addCategory(Intent.CATEGORY_LAUNCHER)
                 this.startActivity(launcher_intent)
-            } else {
+                // ... //
+            } else if(isInstalled_lite) {
+                // Run app
+                val launcher_intent: Intent = pm.getLaunchIntentForPackage("com.facebook.lite")
+                launcher_intent.addCategory(Intent.CATEGORY_LAUNCHER)
+                this.startActivity(launcher_intent)
+                // ... //
+            }
+            else {
                 // open web link
                 val web_launch_intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://facebook.com"))
                 this.startActivity(web_launch_intent)
