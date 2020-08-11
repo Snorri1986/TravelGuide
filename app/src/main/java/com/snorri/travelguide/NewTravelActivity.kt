@@ -7,9 +7,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.*
 import kotlinx.android.synthetic.main.activity_new_travel.*
-import kotlinx.android.synthetic.main.activity_register.*
 import java.util.*
-
 
 
 class NewTravelActivity : AppCompatActivity() {
@@ -149,6 +147,21 @@ class NewTravelActivity : AppCompatActivity() {
         btnTickets.setOnClickListener {
             val intentbtnTickets = Intent(this, TicketsActivity::class.java)
             startActivity(intentbtnTickets)
+        }
+        // ... //
+
+        // reminder v.0.6.9
+        val btnReminder = findViewById<ImageButton>(R.id.btnReminder)
+        btnReminder.setOnClickListener {
+            val cal = Calendar.getInstance()
+            val intent = Intent(Intent.ACTION_EDIT)
+            intent.type = "vnd.android.cursor.item/event"
+            intent.putExtra("beginTime", cal.timeInMillis)
+            intent.putExtra("allDay", false)
+            intent.putExtra("rrule", "FREQ=DAILY")
+            intent.putExtra("endTime", cal.timeInMillis + 60 * 60 * 1000)
+            intent.putExtra("title", "Name of trip")
+            startActivity(intent)
         }
         // ... //
 

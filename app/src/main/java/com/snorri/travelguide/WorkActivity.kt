@@ -155,6 +155,15 @@ class WorkActivity : AppCompatActivity() {
         }
         // ... //
 
+        // run camera application v 0.6.9
+        val btnCamera = findViewById<Button>(R.id.btnPhoto)
+        btnCamera.setOnClickListener {
+            val pm: PackageManager = this.getPackageManager()
+            val cameraIntent:Intent = pm.getLaunchIntentForPackage("com.hmdglobal.app.camera")
+            this.startActivity(cameraIntent)
+        }
+        // ... //
+
     }
 
     // convert GPS coordinates to the country name
