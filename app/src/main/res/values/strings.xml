@@ -27,8 +27,7 @@
     <string name="btnSocialNetwrks">Social Networks</string>
     <string name="btnPhoto">Make photo</string>
     <string name="btnCurExchange">Currency Exchange</string>
-    <string name="btnLockHistory">Location History</string>
-    <string name="btnFAQ">FAQ</string>
+    <string name="btnLockHistory">Local News</string>
     <string name="tfStartDate">Start Date</string>
     <string name="tfEndDate">End Date</string>
     <string name="tfNewTrip">Travel Name</string>

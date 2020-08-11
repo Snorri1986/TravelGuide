@@ -9,19 +9,6 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/btnFAQ"
-        android:layout_width="179dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="115dp"
-        android:layout_marginTop="535dp"
-        android:layout_marginEnd="117dp"
-        android:text="@string/btnFAQ" />
-
-    <Button
         android:id="@+id/btnLockHistory"
         android:layout_width="179dp"
         android:layout_height="wrap_content"

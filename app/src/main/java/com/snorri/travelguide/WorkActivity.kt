@@ -32,6 +32,11 @@ class WorkActivity : AppCompatActivity() {
     val locWeatherAdvice:String = "Click \"Freeze location\" button before get weather information"
     // ... //
 
+
+    // Global country name v 0.6.10
+    var locationState:String? = null
+    // ... //
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -164,6 +169,25 @@ class WorkActivity : AppCompatActivity() {
         }
         // ... //
 
+        // Currency exchange button v 0.6.10
+        // ready to commit 11.08.2020
+        val btnCurrencyExchange = findViewById<Button>(R.id.btnCurExchange)
+        btnCurrencyExchange.setOnClickListener {
+            val intentCallCurrencyExchange = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.travelex.com/currency-converters"))
+            startActivity(intentCallCurrencyExchange)
+        }
+        // ... //
+
+
+        // Location news button v 0.6.10
+        val btnLocationHistory = findViewById<Button>(R.id.btnLockHistory)
+        btnLocationHistory.setOnClickListener {
+            val uri = Uri.parse("http://www.google.com/#q=$locationState")
+            val intentGoogleSearch = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intentGoogleSearch)
+        }
+        // ... //
+
     }
 
     // convert GPS coordinates to the country name
@@ -171,6 +195,9 @@ class WorkActivity : AppCompatActivity() {
         var gcd = Geocoder(baseContext,Locale.getDefault())
         var addrList:MutableList<Address> = gcd.getFromLocation(lat,longtit,1)
         val countryName:String = addrList[0].countryName
+        // save into global variable v 0.6.10
+        locationState = countryName
+        // ... //
         return countryName
     }
     // ... //
