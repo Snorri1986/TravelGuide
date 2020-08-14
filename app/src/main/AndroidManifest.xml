@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/cowboy"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SocialNetworksActivity"></activity>
+        <activity android:name=".TravelReportsActivity"></activity>
+        <activity android:name=".SocialNetworksActivity" />
         <activity android:name=".TicketsActivity" />
         <activity android:name=".HotelsActivity" />
         <activity android:name=".TaxiActivity" />

@@ -2,8 +2,10 @@ package com.snorri.travelguide
 
 import android.content.ContentValues
 import android.content.Context
+import android.database.sqlite.SQLiteCursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+
 
 class UserDBHelper(context: Context,
                    factory: SQLiteDatabase.CursorFactory?) :
@@ -99,6 +101,28 @@ class UserDBHelper(context: Context,
         db.close()
     }
     // ... //
+
+    // Get user's trips for report v 0.6.11
+    // test code 13.08.2020
+    fun getAllUserTripsReport(nName:String = "User") : ArrayList<String> {
+        val list = ArrayList<String>()
+        val db = this.readableDatabase
+        val c = db.rawQuery(
+            "SELECT TripName FROM " + USR_TRIPS_TAB.toString() + " WHERE Uname = " + nName.toString(),
+            null
+        ) as SQLiteCursor
+
+        if (c.moveToFirst()) {
+            do {
+                list.add(c.getString(c.getColumnIndexOrThrow("TripName")))
+            } while (c.moveToNext())
+        }
+        c.close()
+        db.close()
+        return list
+    }
+    // ... //
+
 
     // add user profile image
     fun addUserImage(imgPath:String?,userLogin:String) : Boolean {

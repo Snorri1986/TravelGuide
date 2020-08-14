@@ -47,7 +47,13 @@ class NewTravelActivity : AppCompatActivity() {
             myCalendar.set(Calendar.MONTH, monthOfYear)
             myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
 
-            val date_format = dayOfMonth.toString() + "." + monthOfYear.toString() + "." + year.toString()
+            // fix error in android.app.DatePickerDialog v.0.6.10.1
+            var SdnumOfMonth = monthOfYear + 1
+            // ... //
+
+            // fix error in android.app.DatePickerDialog v.0.6.10.1
+            val date_format = dayOfMonth.toString() + "." + SdnumOfMonth.toString() + "." + year.toString()
+            // ... //
             etStartDate.setText(date_format)
         }
 
@@ -68,7 +74,13 @@ class NewTravelActivity : AppCompatActivity() {
             myCalendarEd.set(Calendar.MONTH, monthOfYear)
             myCalendarEd.set(Calendar.DAY_OF_MONTH, dayOfMonth)
 
-            val date_format_ed = dayOfMonth.toString() + "." + monthOfYear.toString() + "." + year.toString()
+            // fix error in android.app.DatePickerDialog v.0.6.10.1
+            var EdnumOfMonth = monthOfYear + 1
+            // ... //
+
+            // fix error in android.app.DatePickerDialog v.0.6.10.1
+            val date_format_ed = dayOfMonth.toString() + "." + EdnumOfMonth.toString() + "." + year.toString()
+            // ... //
             etEndDate.setText(date_format_ed)
         }
 

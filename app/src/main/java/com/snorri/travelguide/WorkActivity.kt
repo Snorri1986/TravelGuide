@@ -188,6 +188,15 @@ class WorkActivity : AppCompatActivity() {
         }
         // ... //
 
+        // travel reports button v 0.6.11
+        // ready to commit 13.08.2020
+        val btnTrReports = findViewById<Button>(R.id.btnTrReports)
+        btnTrReports.setOnClickListener {
+            val intentCallTrReports = Intent(this, TravelReportsActivity::class.java)
+            startActivity(intentCallTrReports)
+        }
+        // ... //
+
     }
 
     // convert GPS coordinates to the country name
