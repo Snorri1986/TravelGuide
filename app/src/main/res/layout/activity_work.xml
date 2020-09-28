@@ -57,7 +57,7 @@
         android:text="@string/btnSocialNetwrks" />
 
     <Button
-        android:id="@+id/btnTrReports"
+        android:id="@+id/btnMakeCall"
         android:layout_width="179dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -67,7 +67,7 @@
         android:layout_marginStart="219dp"
         android:layout_marginTop="341dp"
         android:layout_marginEnd="13dp"
-        android:text="@string/btnTrReports" />
+        android:text="@string/btnMakeCall" />
 
     <Button
         android:id="@+id/btnSendMsg"
@@ -164,7 +164,7 @@
         android:text="@string/btnWeather" />
 
     <Button
-        android:id="@+id/btnNewTrip"
+        android:id="@+id/btnServices"
         android:layout_width="179dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -172,7 +172,7 @@
         android:layout_centerVertical="true"
         android:layout_marginStart="12dp"
         android:layout_marginTop="212dp"
-        android:text="@string/btnNewTrip" />
+        android:text="@string/btnServices" />
 
     <TextView
         android:id="@+id/tvLocationPhrase"

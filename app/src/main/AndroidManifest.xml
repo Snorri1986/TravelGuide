@@ -20,7 +20,7 @@
         <activity android:name=".TicketsActivity" />
         <activity android:name=".HotelsActivity" />
         <activity android:name=".TaxiActivity" />
-        <activity android:name=".NewTravelActivity" />
+        <activity android:name=".ServicesActivity" />
         <activity
             android:name=".WeatherActivity"
             android:screenOrientation="fullSensor"

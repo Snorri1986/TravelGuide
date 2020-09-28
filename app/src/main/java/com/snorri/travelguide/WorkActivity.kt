@@ -126,10 +126,10 @@ class WorkActivity : AppCompatActivity() {
         Toast.makeText(this,locWeatherAdvice, Toast.LENGTH_LONG).show()
         // ... //
 
-        // go to new trip activity v 0.6.6.2
-        val btnNewTr = findViewById<Button>(R.id.btnNewTrip)
-        btnNewTr.setOnClickListener {
-            val intentCallNewTrip = Intent(this, NewTravelActivity::class.java)
+        // go to new trip activity v 0.6.10.1
+        val btnServs = findViewById<Button>(R.id.btnServices)
+        btnServs.setOnClickListener {
+            val intentCallNewTrip = Intent(this, ServicesActivity::class.java)
             startActivity(intentCallNewTrip)
         }
         // ... //
@@ -170,7 +170,6 @@ class WorkActivity : AppCompatActivity() {
         // ... //
 
         // Currency exchange button v 0.6.10
-        // ready to commit 11.08.2020
         val btnCurrencyExchange = findViewById<Button>(R.id.btnCurExchange)
         btnCurrencyExchange.setOnClickListener {
             val intentCallCurrencyExchange = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.travelex.com/currency-converters"))
@@ -185,15 +184,6 @@ class WorkActivity : AppCompatActivity() {
             val uri = Uri.parse("http://www.google.com/#q=$locationState")
             val intentGoogleSearch = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intentGoogleSearch)
-        }
-        // ... //
-
-        // travel reports button v 0.6.11
-        // ready to commit 13.08.2020
-        val btnTrReports = findViewById<Button>(R.id.btnTrReports)
-        btnTrReports.setOnClickListener {
-            val intentCallTrReports = Intent(this, TravelReportsActivity::class.java)
-            startActivity(intentCallTrReports)
         }
         // ... //
 

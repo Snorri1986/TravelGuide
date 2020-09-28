@@ -15,39 +15,22 @@
     <string name="btn_add_local_photo">Add photo</string>
     <string name="tvGreetings">Welcome,</string>
     <string name="tvLocationPhrase">My current location is:</string>
-    <string name="btnNewTrip">New Trip</string>
+    <string name="btnServices">Services</string>
     <string name="btnWeather">Get Weather</string>
     <string name="btnMapLocation">Map</string>
     <string name="tvLatPhrase">Lat:</string>
     <string name="tvLongPhrase">Long:</string>
     <string name="tvLong">LONGTITUDE</string>
     <string name="btnFreezeLoc">Freeze location</string>
-    <string name="btnSendMsg">Send message</string>
-    <string name="btnTrReports">Travel Reports</string>
+    <string name="btnSendMsg">Send E-MAIL</string>
+    <string name="btnMakeCall">Make call</string>
     <string name="btnSocialNetwrks">Social Networks</string>
     <string name="btnPhoto">Make photo</string>
     <string name="btnCurExchange">Currency Exchange</string>
     <string name="btnLockHistory">Local News</string>
-    <string name="tfStartDate">Start Date</string>
-    <string name="tfEndDate">End Date</string>
-    <string name="tfNewTrip">Travel Name</string>
-    <string name="tfAcomodation">Hotel</string>
-    <string name="tfFromLocation">From</string>
-    <string name="tfToLocation">To</string>
-    <string name="tfMoney">Planned spendings</string>
     <string name="btnAcomHotels">Hotels</string>
     <string name="btnTransportPass">Tickets</string>
     <string name="btnTaxxis">Taxi</string>
-    <string name="btnErase">Clear</string>
-    <string name="btnSaveTrip">Save</string>
-    <string name="btnCancelTrip">Cancel</string>
-    <string-array name="TravelVehicles">
-        <item>Travel by Plane</item>
-        <item>Travel by Train</item>
-        <item>Travel by Ship</item>
-        <item>Travel by Auto</item>
-        <item>Travel by Bus</item>
-    </string-array>
     <string name="selected_item">Selected item:</string>
     <string name="tvBooking">Booking.com</string>
     <string name="tvAirBnB">airbnb.ru</string>
@@ -61,5 +44,4 @@
     <string name="tvFB">facebook.com</string>
     <string name="tvTwitter">twitter.com</string>
     <string name="tvInstagram">instagram.com</string>
-
 </resources>
