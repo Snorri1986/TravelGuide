@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpaineEmergencyActivity">
+
+    <TextView
+        android:id="@+id/tvTouristHelplineSpaineNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="217dp"
+        android:layout_marginTop="275dp"
+        android:autoLink="phone"
+        android:text="@string/tvTouristHelplineSpaineNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTouristHelplineSpaine"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="276dp"
+        android:text="@string/tvTouristHelplineSpaine"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvRedCrossSpaineNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="217dp"
+        android:layout_marginTop="213dp"
+        android:autoLink="phone"
+        android:text="@string/tvRedCrossSpaineNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvRedCrossSpaine"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="214dp"
+        android:text="@string/tvRedCrossSpaine"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMaritimaSeaRescueSpaineNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="217dp"
+        android:layout_marginTop="156dp"
+        android:autoLink="phone"
+        android:text="@string/tvMaritimaSeaRescueSpaineNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMaritimaSeaRescueSpaine"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="152dp"
+        android:text="@string/tvMaritimaSeaRescueSpaine"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMedFireSpaineNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="30dp"
+        android:autoLink="phone"
+        android:text="@string/tvMedFireSpaineNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvLocalPoliceSpaine"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="94dp"
+        android:text="@string/tvLocalPoliceSpaine"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvLocalPoliceSpaineNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="94dp"
+        android:autoLink="phone"
+        android:text="@string/tvLocalPoliceSpaineNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMedFireSpaine"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/tvMedFireSpaine"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

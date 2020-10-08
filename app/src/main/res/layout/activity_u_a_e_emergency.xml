@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UAEEmergencyActivity">
+
+    <TextView
+        android:id="@+id/tvWaterUAENumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="221dp"
+        android:layout_marginTop="331dp"
+        android:autoLink="phone"
+        android:text="@string/tvWaterUAENumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvElectroUAE"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="274dp"
+        android:text="@string/tvElectroUAE"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvElectroUAENumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="219dp"
+        android:layout_marginTop="272dp"
+        android:autoLink="phone"
+        android:text="@string/tvElectroUAENumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCoastGuardUAE"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="212dp"
+        android:text="@string/tvCoastGuardUAE"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCoastGuardUAENumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="219dp"
+        android:layout_marginTop="210dp"
+        android:autoLink="phone"
+        android:text="@string/tvCoastGuardUAENumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvWaterUAE"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="333dp"
+        android:text="@string/tvWaterUAE"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFireUAENumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="217dp"
+        android:layout_marginTop="150dp"
+        android:autoLink="phone"
+        android:text="@string/tvFireUAENumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFireUAE"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="152dp"
+        android:text="@string/tvFireUAE"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPoliceUAENumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="30dp"
+        android:autoLink="phone"
+        android:text="@string/tvPoliceUAENumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAmbulanceUAE"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="94dp"
+        android:text="@string/tvAmbulanceUAE"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAmbulanceUAENumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="94dp"
+        android:autoLink="phone"
+        android:text="@string/tvAmbulanceUAENumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPoliceUAE"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/tvPoliceUAE"
+        android:textStyle="bold" />
+
+</RelativeLayout>

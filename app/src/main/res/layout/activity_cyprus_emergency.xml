@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CyprusEmergencyActivity">
+
+    <TextView
+        android:id="@+id/tvForestFireCyprusNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="210dp"
+        android:autoLink="phone"
+        android:text="@string/tvForestFireCyprusNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDrugsCyprus"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="273dp"
+        android:text="@string/tvDrugsCyprus"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDrugsCyprusNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="270dp"
+        android:autoLink="phone"
+        android:text="@string/tvDrugsCyprusNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvForestFireCyprus"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="213dp"
+        android:text="@string/tvForestFireCyprus"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPoliceCyprusNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="152dp"
+        android:autoLink="phone"
+        android:text="@string/tvPoliceCyprusNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPoliceCyprus"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="152dp"
+        android:text="@string/tvPoliceCyprus"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAmbulanceCyprusNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="30dp"
+        android:autoLink="phone"
+        android:text="@string/tvAmbulanceCyprusNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFireDepCyprus"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="94dp"
+        android:text="@string/tvFireDepCyprus"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFireDepCyprusNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="94dp"
+        android:autoLink="phone"
+        android:text="@string/tvFireDepCyprusNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAmbulanceCyprus"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/tvAmbulanceCyprus"
+        android:textStyle="bold" />
+
+</RelativeLayout>

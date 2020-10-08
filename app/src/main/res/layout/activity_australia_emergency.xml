@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AustraliaEmergencyActivity">
+
+    <TextView
+        android:id="@+id/tvEmergencyHelpLineAustraliaNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="152dp"
+        android:autoLink="phone"
+        android:text="@string/tvEmergencyHelpLineAustraliaNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvEmergencyHelpLineAustralia"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="152dp"
+        android:text="@string/tvEmergencyHelpLineAustralia"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPFAAustraliaNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="30dp"
+        android:autoLink="phone"
+        android:text="@string/tvPFAAustraliaNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSESAustralia"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="94dp"
+        android:text="@string/tvSESAustralia"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSESAustraliaNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="94dp"
+        android:autoLink="phone"
+        android:text="@string/tvSESAustraliaNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPFAAustralia"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/tvPFAAustralia"
+        android:textStyle="bold" />
+
+</RelativeLayout>

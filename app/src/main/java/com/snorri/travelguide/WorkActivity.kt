@@ -126,7 +126,7 @@ class WorkActivity : AppCompatActivity() {
         Toast.makeText(this,locWeatherAdvice, Toast.LENGTH_LONG).show()
         // ... //
 
-        // go to new trip activity v 0.6.10.1
+        // Services v 0.6.10.1
         val btnServs = findViewById<Button>(R.id.btnServices)
         btnServs.setOnClickListener {
             val intentCallNewTrip = Intent(this, ServicesActivity::class.java)

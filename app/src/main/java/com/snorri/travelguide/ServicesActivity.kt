@@ -39,7 +39,7 @@ class ServicesActivity : AppCompatActivity() {
         // ... //
 
         // reminder v.0.6.9
-        val btnReminder = findViewById<ImageButton>(R.id.btnReminder)
+        val btnReminder = findViewById<Button>(R.id.btnReminder)
         btnReminder.setOnClickListener {
             val cal = Calendar.getInstance()
             val intent = Intent(Intent.ACTION_EDIT)
@@ -50,6 +50,15 @@ class ServicesActivity : AppCompatActivity() {
             intent.putExtra("endTime", cal.timeInMillis + 60 * 60 * 1000)
             intent.putExtra("title", "Name of trip")
             startActivity(intent)
+        }
+        // ... //
+
+
+        // Emergency. Ready to commit v 0.6.11
+        val btnEmerg = findViewById<Button>(R.id.btnEmergency)
+        btnEmerg.setOnClickListener {
+            val intentbtnEmerg = Intent(this, EmergencyActivity::class.java)
+            startActivity(intentbtnEmerg)
         }
         // ... //
     }

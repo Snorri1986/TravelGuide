@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GreeceEmergencyActivity">
+
+    <TextView
+        android:id="@+id/tvCoastGuardGreeceNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="210dp"
+        android:autoLink="phone"
+        android:text="@string/tvCoastGuardGreeceNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSocAssisGreece"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="273dp"
+        android:text="@string/tvSocAssisGreece"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSocAssisGreeceNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="270dp"
+        android:autoLink="phone"
+        android:text="@string/tvSocAssisGreeceNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCoastGuardGreece"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="213dp"
+        android:text="@string/tvCoastGuardGreece"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPoliceGreeceNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="152dp"
+        android:autoLink="phone"
+        android:text="@string/tvPoliceGreeceNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPoliceGreece"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="152dp"
+        android:text="@string/tvPoliceGreece"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAmbulanceGreeceNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="30dp"
+        android:autoLink="phone"
+        android:text="@string/tvAmbulanceGreeceNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFireDepGreece"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="94dp"
+        android:text="@string/tvFireDepGreece"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFireDepGreeceNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="94dp"
+        android:autoLink="phone"
+        android:text="@string/tvFireDepGreeceNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAmbulanceGreece"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/tvAmbulanceGreece"
+        android:textStyle="bold" />
+
+</RelativeLayout>

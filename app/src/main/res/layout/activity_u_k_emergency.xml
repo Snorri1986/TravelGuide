@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UKEmergencyActivity">
+
+    <TextView
+        android:id="@+id/tvNHSinUKNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="217dp"
+        android:layout_marginTop="156dp"
+        android:autoLink="phone"
+        android:text="@string/tvNHSinUKNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNHSinUK"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="152dp"
+        android:text="@string/tvNHSinUK"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMedFirePoliceUKNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="30dp"
+        android:autoLink="phone"
+        android:text="@string/tvMedFirePoliceUKNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvGasEmergencyUK"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="94dp"
+        android:text="@string/tvGasEmergencyUK"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvGasEmergencyUKNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="94dp"
+        android:autoLink="phone"
+        android:text="@string/tvGasEmergencyUKNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMedFirePoliceUK"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/tvMedFirePoliceUK"
+        android:textStyle="bold" />
+
+</RelativeLayout>

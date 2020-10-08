@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TurkeyEmergencyActivity">
+
+    <TextView
+        android:id="@+id/tvMissChildTurkeyNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="334dp"
+        android:autoLink="phone"
+        android:text="@string/tvMissChildTurkeyNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMissChildTurkey"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="334dp"
+        android:text="@string/tvMissChildTurkey"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCoastGuardTurkeyNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="210dp"
+        android:autoLink="phone"
+        android:text="@string/tvCoastGuardTurkeyNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvForestFiresTurkey"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="273dp"
+        android:text="@string/tvForestFiresTurkey"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvForestFiresTurkeyNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="270dp"
+        android:autoLink="phone"
+        android:text="@string/tvForestFiresTurkeyNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCoastGuardTurkey"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="213dp"
+        android:text="@string/tvCoastGuardTurkey"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPoliceTurkeyNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="152dp"
+        android:autoLink="phone"
+        android:text="@string/tvPoliceTurkeyNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPoliceTurkey"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="152dp"
+        android:text="@string/tvPoliceTurkey"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAmbulanceTurkeyNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="30dp"
+        android:autoLink="phone"
+        android:text="@string/tvAmbulanceTurkeyNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFireTurkey"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="94dp"
+        android:text="@string/tvFireTurkey"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFireTurkeyNumber"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="94dp"
+        android:autoLink="phone"
+        android:text="@string/tvFireTurkeyNumber"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAmbulanceTurkey"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/tvAmbulanceTurkey"
+        android:textStyle="bold" />
+</RelativeLayout>

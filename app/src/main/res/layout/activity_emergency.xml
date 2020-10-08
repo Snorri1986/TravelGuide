@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmergencyActivity">
+
+    <ImageView
+        android:id="@+id/ivTurkey"
+        android:layout_width="124dp"
+        android:layout_height="118dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="271dp"
+        android:src="@drawable/turkey" />
+
+    <TextView
+        android:id="@+id/tvTurkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="513dp"
+        android:text="@string/tvTurkey"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivEgypt"
+        android:layout_width="124dp"
+        android:layout_height="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp"
+        android:src="@drawable/egypt" />
+
+    <TextView
+        android:id="@+id/tvEgypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="514dp"
+        android:text="@string/tvEgypt"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivCyprus"
+        android:layout_width="124dp"
+        android:layout_height="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/cyprus" />
+
+    <TextView
+        android:id="@+id/tvCyprus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginBottom="511dp"
+        android:text="@string/tvCyprus"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivGreece"
+        android:layout_width="124dp"
+        android:layout_height="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="275dp"
+        android:src="@drawable/greece" />
+
+    <TextView
+        android:id="@+id/tvGreece"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="347dp"
+        android:text="@string/tvGreece"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivAustralia"
+        android:layout_width="124dp"
+        android:layout_height="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="143dp"
+        android:src="@drawable/australia" />
+
+    <TextView
+        android:id="@+id/tvAustralia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="172dp"
+        android:layout_marginBottom="349dp"
+        android:text="@string/tvAustralia"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivSpaine"
+        android:layout_width="124dp"
+        android:layout_height="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="261dp"
+        android:layout_marginEnd="7dp"
+        android:src="@drawable/spaine" />
+
+    <TextView
+        android:id="@+id/tvSpaine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="313dp"
+        android:layout_marginBottom="347dp"
+        android:text="@string/tvSpaine"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivUK"
+        android:layout_width="124dp"
+        android:layout_height="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="407dp"
+        android:layout_marginEnd="275dp"
+        android:src="@drawable/uk" />
+
+    <TextView
+        android:id="@+id/tvUK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="198dp"
+        android:text="@string/tvUK"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivUAE"
+        android:layout_width="124dp"
+        android:layout_height="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="407dp"
+        android:layout_marginEnd="137dp"
+        android:src="@drawable/uae" />
+
+    <TextView
+        android:id="@+id/tvUAE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginBottom="199dp"
+        android:text="@string/tvUAE"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivIsrael"
+        android:layout_width="124dp"
+        android:layout_height="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="407dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/israel" />
+
+    <TextView
+        android:id="@+id/tvIsrael"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="331dp"
+        android:layout_marginBottom="203dp"
+        android:text="@string/tvIsrael"
+        android:textStyle="bold" />
+
+</RelativeLayout>
