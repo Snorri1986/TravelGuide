@@ -29,8 +29,6 @@ class LocationHelper {
         fun onLocationChanged(location: Location)
     }
 
-
-    // TODO: If permissions granted start WorkActivity once againe
     fun startListeningUserLocation(context: Context, myListener: MyLocationListener) {
         myLocationListener = myListener
 

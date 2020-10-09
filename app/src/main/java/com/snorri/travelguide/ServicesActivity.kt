@@ -14,7 +14,7 @@ class ServicesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_travel)
 
-        // Taxi button. ready to commit v.0.6.6.2
+        // Taxi button. v.0.6.6.2
         val btnTaxi = findViewById<Button>(R.id.btnTaxxis)
         btnTaxi.setOnClickListener {
             val intentbtnTaxi = Intent(this, TaxiActivity::class.java)
@@ -22,7 +22,7 @@ class ServicesActivity : AppCompatActivity() {
         }
         // ... //
 
-        // Hotels button. ready to commit v.0.6.6.2
+        // Hotels button.  v.0.6.6.2
         val btnHotels = findViewById<Button>(R.id.btnAcomHotels)
         btnHotels.setOnClickListener {
             val intentbtnHotels = Intent(this, HotelsActivity::class.java)
@@ -30,7 +30,7 @@ class ServicesActivity : AppCompatActivity() {
         }
         // ... //
 
-        // Tickets button. ready to commit v.0.6.6.2
+        // Tickets button. v.0.6.6.2
         val btnTickets = findViewById<Button>(R.id.btnTransportPass)
         btnTickets.setOnClickListener {
             val intentbtnTickets = Intent(this, TicketsActivity::class.java)
@@ -54,7 +54,7 @@ class ServicesActivity : AppCompatActivity() {
         // ... //
 
 
-        // Emergency. Ready to commit v 0.6.11
+        // Emergency. v 0.6.11
         val btnEmerg = findViewById<Button>(R.id.btnEmergency)
         btnEmerg.setOnClickListener {
             val intentbtnEmerg = Intent(this, EmergencyActivity::class.java)

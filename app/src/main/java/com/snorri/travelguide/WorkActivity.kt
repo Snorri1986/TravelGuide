@@ -185,16 +185,6 @@ class WorkActivity : AppCompatActivity() {
         }
         // ... //
 
-
-        // Location news button v 0.6.10
-        val btnLocationHistory = findViewById<Button>(R.id.btnLockHistory)
-        btnLocationHistory.setOnClickListener {
-            val uri = Uri.parse("http://www.google.com/#q=$locationState")
-            val intentGoogleSearch = Intent(Intent.ACTION_VIEW, uri)
-            startActivity(intentGoogleSearch)
-        }
-        // ... //
-
     }
 
     // convert GPS coordinates to the country name
