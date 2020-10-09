@@ -134,6 +134,14 @@ class WorkActivity : AppCompatActivity() {
         }
         // ... //
 
+        // Make call button v 0.6.12
+        val btnCall = findViewById<Button>(R.id.btnMakeCall)
+        btnCall.setOnClickListener {
+            val callIntent = Intent(Intent.ACTION_DIAL)
+            startActivity(callIntent)
+        }
+        // ... //
+
         // show my location on Google Map Application v 0.6.7
         val btnGoogleMap = findViewById<Button>(R.id.btnMapLocation)
         btnGoogleMap.setOnClickListener {
