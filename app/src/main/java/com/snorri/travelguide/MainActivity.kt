@@ -6,13 +6,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.widget.Button
 import android.widget.Toast
-import bolts.Task.delay
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
-import okhttp3.Dispatcher
-import java.util.concurrent.TimeUnit
 import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
