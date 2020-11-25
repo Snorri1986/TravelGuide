@@ -47,10 +47,6 @@ class LocalLoginActivity : AppCompatActivity() {
                 startActivity(intentGoNext)
                 // Activate Geolocation message
                 Toast.makeText(this, "Click back once to activation Geolocation", Toast.LENGTH_LONG).show()
-                // About location news button v 0.6.10
-                Toast.makeText(this, "Click Local News button after set location only", Toast.LENGTH_LONG).show()
-                // ... //
-                // ... //
             } else {
                 Toast.makeText(this, "Incorrect username or password", Toast.LENGTH_LONG).show()
             }
