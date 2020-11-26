@@ -228,4 +228,14 @@
         android:layout_marginTop="124dp"
         android:text="MY LOCATION" />
 
+    <TextView
+        android:id="@+id/tvDateTime"
+        android:layout_width="234dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="136dp"
+        android:text="TextView"
+        android:textColor="@color/trueWhite" />
+
 </RelativeLayout>

@@ -19,6 +19,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_work.*
+import java.text.SimpleDateFormat
 import java.util.*
 
 class WorkActivity : AppCompatActivity() {
@@ -183,6 +184,13 @@ class WorkActivity : AppCompatActivity() {
             val intentCallCurrencyExchange = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.travelex.com/currency-converters"))
             startActivity(intentCallCurrencyExchange)
         }
+        // ... //
+
+        // Current date and time. v 1.2
+        val tvDatTime = findViewById<TextView>(R.id.tvDateTime)
+        val simpleDateFormat = SimpleDateFormat("dd.MM.yyyy HH:mm z")
+        val curDateTime:String = simpleDateFormat.format(Date())
+        tvDatTime.text = curDateTime
         // ... //
 
     }
