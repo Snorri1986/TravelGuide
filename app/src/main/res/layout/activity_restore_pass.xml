@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestorePassActivity">
+
+    <EditText
+        android:id="@+id/tfNameRestorePass"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/rectangle"
+        android:hint="Enter your register name"
+        android:inputType="text"
+        android:textColorHint="@color/trueRed" />
+
+    <Button
+        android:id="@+id/btnShowPassword"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginBottom="433dp"
+        android:text="@string/btnShowPassword" />
+
+</RelativeLayout>

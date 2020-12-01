@@ -105,6 +105,23 @@ class UserDBHelper(context: Context,
         return null
     }
 
+    // get user password by userNativeName. v1.3
+    fun getPasswordByUsrName(usrName: String): User? {
+        val db = this.writableDatabase
+        val selectQuery = "SELECT  * FROM $TABLE_NAME WHERE $NATIVE_NAME = ?"
+        db.rawQuery(selectQuery, arrayOf(usrName)).use { // .use requires API 16
+            if (it.moveToFirst()) {
+                val authenticUser = User()
+                authenticUser.Login= it.getString(it.getColumnIndex(COLUMN_LOGIN))
+                authenticUser.Password = it.getString(it.getColumnIndex(COLUMN_PASWORD))
+                authenticUser.userNativeName = it.getString(it.getColumnIndex(NATIVE_NAME))
+                return authenticUser
+            }
+        }
+        return null
+    }
+    // ... //
+
     // Add user GPS coordinate.
     fun storeGps(gpsLat:Double,gpsLong:Double,nName:String = "User"):Boolean {
         var res:Boolean = false

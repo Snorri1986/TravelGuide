@@ -7,7 +7,6 @@ import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_local_login.*
 
-
 class LocalLoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +20,15 @@ class LocalLoginActivity : AppCompatActivity() {
             startActivity(intentbtnCancelLocal)
         }
 
+        // Restore password activity. v1.3
+        val btnRestorePass = findViewById<Button>(R.id.btnRestorePassword)
+        btnRestorePass.setOnClickListener {
+            val intentbtnRestorePass = Intent(this, RestorePassActivity::class.java)
+            startActivity(intentbtnRestorePass)
+        }
+        // ... //
+
+
         // GO Button
         val btnGobutton = findViewById<Button>(R.id.btnGo)
         btnGobutton.setOnClickListener {
@@ -29,10 +37,8 @@ class LocalLoginActivity : AppCompatActivity() {
             val etLogin = tfLoginLocal.text.toString()
             val etPassword = tfPassLocal.text.toString()
 
-
             // call database method
             val authUser = dbHandler.getUser(etLogin)
-
 
             // check username and password and go to next activity
             if(authUser?.Login == etLogin && authUser?.Password == etPassword) {

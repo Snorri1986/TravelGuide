@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/cowboy"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".IsraelEmergencyActivity"></activity>
+        <activity android:name=".RestorePassActivity"></activity>
+        <activity android:name=".IsraelEmergencyActivity" />
         <activity android:name=".UAEEmergencyActivity" />
         <activity android:name=".UKEmergencyActivity" />
         <activity android:name=".SpaineEmergencyActivity" />

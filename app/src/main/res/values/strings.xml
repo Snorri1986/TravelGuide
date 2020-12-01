@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TravelGuide for travelers v 1.0</string>
+    <string name="app_name">TravelGuide for travelers v 1.3</string>
     <string name="btnReg">Register</string>
     <string name="btnLogin">Log in</string>
     <string name="btnFaceBookAuth">Facebook</string>
@@ -143,4 +143,6 @@
     <string name="tvFireDepIsraelNumber">+972102</string>
     <string name="tvElectroIsrael">Electric company</string>
     <string name="tvElectroIsraelNumber">+972103</string>
+    <string name="btnRestorePassword">Restore password</string>
+    <string name="btnShowPassword">Show password</string>
 </resources>

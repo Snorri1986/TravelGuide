@@ -7,6 +7,17 @@
     tools:context=".LocalLoginActivity"
     android:background="@drawable/login_lake_800x600">
 
+    <Button
+        android:id="@+id/btnRestorePassword"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginBottom="84dp"
+        android:text="@string/btnRestorePassword" />
+
     <EditText
         android:id="@+id/tfLoginLocal"
         android:layout_width="265dp"
@@ -41,8 +52,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="81dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="146dp"
         android:text="@string/btnGo" />
 
     <Button
@@ -51,8 +62,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="220dp"
-        android:layout_marginBottom="82dp"
+        android:layout_marginStart="222dp"
+        android:layout_marginBottom="146dp"
         android:text="@string/btnCancel" />
 
 </RelativeLayout>
