@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'org.jetbrains.dokka-android'
 
 android {
     compileSdkVersion 28
@@ -23,6 +24,12 @@ android {
         }
     }
 
+    dokka {
+        outputFormat = 'javadoc'
+        outputDirectory = "$buildDir/docs"
+        skipDeprecated = true
+    }
+
 }
 
 dependencies {
@@ -37,4 +44,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile group: 'org.jetbrains.kotlin', name: 'kotlin-reflect', version: '1.1.1'
 }
